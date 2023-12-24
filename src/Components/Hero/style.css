@@ -1,0 +1,145 @@
+.Hero-header-content{
+font-family: Yantramanav;
+font-size: 86px;
+font-weight: 700;
+height: 100%;
+width: 100%;
+line-height: 100px;
+letter-spacing: 0em;
+text-align: left;
+display: flex;
+justify-content: center;
+align-items: center ;
+}
+.Image-container2{
+    height: 543px;
+    width: 402px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgb(0, 255, 13);
+    position: absolute;
+    border-top: 50px solid white;
+    border-left: 50px solid white;
+}
+.hero{
+    position: relative;
+    padding-top: 91.6px;
+    height: 100vh;
+}
+.Image-container1{
+    width: 100%;
+
+background-color: red;
+position: relative;
+
+}
+.para-container{
+    position: relative;
+    left: 44px;
+    width: fit-content;
+}
+.play-icon{
+    border:#001F3F 2px solid;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lottie{
+    position: absolute;
+
+    top: -30px;
+}
+.Explore-circle{
+    width: 120px;
+height: 120px;
+ background: #FFD700;
+position: absolute;
+border-radius: 100px;
+left: 170px;
+top: -25px;
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Hind Vadodara;
+font-size: 15px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.watch-container{
+    display: flex;
+    gap: 20px;
+    position: relative;
+}
+.arrow{
+    position: relative;
+  display: flex;
+  gap: 10px;
+}
+.watch-video{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.get-container{
+    display: flex;
+    gap: 80px;
+   
+}
+.para{
+    width: 839px;
+    position: relative;
+ 
+}
+.getintouch{
+    width:165px;
+height:50px;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 5px;
+border: 1px solid #001F3F;
+gap: 10px;
+font-family: Hind Vadodara;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+
+}
+.Hero-header-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.top{
+    position: relative;
+    display: flex;
+    width: auto;
+}
+.Top-footer{
+font-family: Gilda Display;
+font-size: 38px;
+font-weight: 400;
+line-height: 56px;
+letter-spacing: 0em;
+position: relative;
+left: 44px;
+padding-right: 44px;
+}
+.Hero-header{
+padding-right: 44px;
+height: 254px;
+left: 44px;
+gap: 10px;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+}
