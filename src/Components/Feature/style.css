@@ -1,0 +1,62 @@
+.Feature-section{
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #3D9970;
+    display: flex;
+justify-content: center;
+align-items: center;
+}
+.Feature-section-container{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 30px;
+}
+.Feature:nth-child(odd){
+    background-color: #FFF;
+    color: #001F3F;
+}
+.Feature:nth-child(even){
+    background-color: #001F3F;
+    color: #fff;
+}
+.Box-circle{
+    box-shadow: 0px 3.0649349689483643px 3.0649349689483643px 0px #00000040;
+    width: 59px;
+    height: 59px;
+    border-radius: 50%;
+    background-color: #FFD700;
+   position: absolute;
+   bottom: -29.5px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #001F3F;
+   font-size: 30px;
+}
+.Box-circle{
+    transform: rotate(-45deg);
+    transition: all 400ms ease-in;
+}
+.Box-circle:hover{
+    transform: rotate(0);
+}
+.Feature{
+    width: 308px;
+height: 249px;
+display: flex;
+justify-content: center;
+align-items: center;
+position: relative;
+border-radius: 30px;
+}
+.Feature-content{
+    width: 157px;
+    font-family: Yantramanav;
+font-size: 20px;
+font-weight: 700;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+}

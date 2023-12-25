@@ -1,8 +1,10 @@
 import React from "react";
 import "./style.css";
 import Lottie from "react-lottie";
+import { SlMouse } from "react-icons/sl";
 import Anidat from "../../Anidat.json";
 import { FaPlay } from "react-icons/fa6";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 function Hero() {
   const defaultOptions = {
     loop: true,
@@ -53,6 +55,12 @@ function Hero() {
         </div>
       </div>
       <div className="Image-container2"></div>
+      <AnchorLink href="#box" style={{textDecoration:"none",color:"black"}} >
+      <div className="scroll-container">
+      <SlMouse style={{fontSize:"25px"}} className="Mouseicon"/>
+       <div style={{height:"fit-content"}}> <div className="scroll">SCROLL</div></div>
+      </div>
+      </AnchorLink>
     </div>
   );
 }
