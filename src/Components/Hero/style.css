@@ -43,22 +43,23 @@ align-items: center ;
     bottom: 25px;
     position: absolute;
     flex-direction: column;
-    gap: 30px;
+    gap: 25px;
 }
 .Image-container2{
-    height: 543px;
+    height: 451px;
     width: 402px;
     right: 0px;
     bottom: 0px;
     background-color: rgb(0, 255, 13);
     position: absolute;
-    border-top: 50px solid white;
-    border-left: 50px solid white;
+    border-top: 40px solid white;
+    border-left: 40px solid white;
 }
 .hero{
     position: relative;
     padding-top: 91.6px;
-    height: 100vh;
+    padding-bottom: 15px;
+    height: 85vh;
 }
 .Image-container1{
     width: 100%;
@@ -169,7 +170,6 @@ padding-right: 44px;
 }
 .Hero-header{
 padding-right: 44px;
-height: 254px;
 left: 44px;
 gap: 10px;
 position: relative;
