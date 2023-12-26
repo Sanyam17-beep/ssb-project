@@ -14,7 +14,7 @@ align-items: center ;
 .scroll{
     transform: rotate(-90deg);
     font-family: Inter;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 700;
     line-height: 15px;
     letter-spacing: 0.17em;
@@ -43,7 +43,7 @@ align-items: center ;
     bottom: 25px;
     position: absolute;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 .Image-container2{
     height: 451px;
@@ -62,11 +62,16 @@ align-items: center ;
     height: 85vh;
 }
 .Image-container1{
-    width: 100%;
+    width: 80%;
 
 background-color: red;
 position: relative;
 
+}
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .para-container{
     position: relative;
@@ -85,7 +90,7 @@ position: relative;
 .lottie{
     position: absolute;
 
-    top: -30px;
+    top: -20px;
 }
 .Explore-circle{
     width: 120px;
@@ -94,7 +99,7 @@ height: 120px;
 position: absolute;
 border-radius: 100px;
 left: 170px;
-top: -25px;
+top: -15px;
 display: flex;
 justify-content: center;
 align-items: center;
@@ -128,7 +133,7 @@ text-align: center;
    
 }
 .para{
-    width: 839px;
+    width: 90%;
     position: relative;
  
 }
