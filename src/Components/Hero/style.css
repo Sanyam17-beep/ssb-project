@@ -19,7 +19,6 @@ align-items: center ;
     line-height: 15px;
     letter-spacing: 0.17em;
     text-align: center;
-    
     width: fit-content;
 }
 .Mouseicon{
@@ -46,14 +45,14 @@ align-items: center ;
     gap: 20px;
 }
 .Image-container2{
-    height: 451px;
-    width: 402px;
+    height: 400px;
+    width: 350px;
     right: 0px;
     bottom: 0px;
     background-color: rgb(0, 255, 13);
     position: absolute;
-    border-top: 40px solid white;
-    border-left: 40px solid white;
+    border-top: 30px solid white;
+    border-left: 30px solid white;
 }
 .hero{
     position: relative;
@@ -62,12 +61,29 @@ align-items: center ;
     height: 85vh;
 }
 .Image-container1{
-    width: 80%;
-
-background-color: red;
+    width: 75%;
 position: relative;
 
 }
+.image {
+  
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .test{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+  }
+  .visible {
+    opacity: 1;
+  }
+  
+  .hidden {
+    opacity: 0;
+  }
+  
 .image{
     width: 100%;
     height: 100%;
@@ -76,7 +92,7 @@ position: relative;
 .para-container{
     position: relative;
     left: 44px;
-    width: fit-content;
+    width: 75%;
 }
 .play-icon{
     border:#001F3F 2px solid;
@@ -115,6 +131,7 @@ text-align: center;
     display: flex;
     gap: 20px;
     position: relative;
+   
 }
 .arrow{
     position: relative;
@@ -157,6 +174,9 @@ letter-spacing: 0em;
     display: flex;
     flex-direction: column;
     width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
 }
 .top{
     position: relative;
