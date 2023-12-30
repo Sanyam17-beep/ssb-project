@@ -1,0 +1,67 @@
+.point-container{
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+.point-Image>img{
+    width: 550px;
+    height: 100%;
+    object-fit: cover;
+}
+.point-content-container{
+    background: #3D9970;
+      height:auto;
+      width: 100%;
+}
+.point-content-container{
+    padding:0px 20px 0px 20px;
+}
+
+.point-content-header{
+font-family: Yantramanav;
+font-size: 76px;
+font-weight: 700;
+line-height: 125px;
+letter-spacing: 0em;
+text-align: left;
+color: white;
+}
+.point-box{
+    width: 73px;
+height: 73px;
+border-radius: 8px;
+background: #FFD700;
+
+margin: 10px;
+}
+.points-content-header{
+    font-family: Gilda Display;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0em;
+    text-align: left;
+     
+}
+.point-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.points-content-content{
+font-family: Hind Vadodara;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+}
+.points-content-container{
+    width: 90%;
+    color: white;
+    padding: 10px;
+}
+.points{
+    display: flex;
+}
