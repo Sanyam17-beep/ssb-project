@@ -7,6 +7,10 @@ import Classroom from './Components/Classroom/Classroom';
 import Aboutceo from './Components/Aboutceo/Aboutceo';
 import Point from './Components/Point/Point';
 import Testimonials from './Components/Testimonials/Testimonials';
+import Employee from './Components/Employee/Employee';
+import Blogs from './Components/Blogs/Blogs';
+import Contact from './Components/Contact/Contact';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <div className="App">
@@ -17,8 +21,10 @@ function App() {
         <Point/>
         <Aboutceo/>
         <Testimonials/>
-        
-        <div className='empty'/>
+        <Employee/>
+        <Blogs/>
+        <Contact/>
+        <Footer/>
     </div>
   );
 }

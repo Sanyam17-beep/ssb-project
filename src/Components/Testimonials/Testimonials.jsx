@@ -32,7 +32,7 @@ export default function Testimonials() {
         className="mySwiper testimonial"
       >
         <SwiperSlide className='slide swiper-slide'> <div className='black-box'>
-        <img src={im1}  alt="" />
+        <img src="https://www.ssbbullseye.com/utilities/frontend/images/shaksham.png"  alt="" />
         <div className='black-box-circle' onClick={()=>{window.location.href="https://www.ssbbullseye.com/videos/shaksham.mp4"}}>
         <FaPlay />
             <div className="yellow-circle3"></div>
@@ -40,15 +40,15 @@ export default function Testimonials() {
         </div>
         </div>
             <p>
-            “Embarking on a linguistic journey, we delve into language education, guiding students through exploration and proficiency.”
+            “Shaksham Kumar clears  the SSB in his FIRST ATTEMPT. Out of 85 candidates who reported at Naval Selection Board ( NSB)Visakhapatnam, 5 finally got recommended. Shaksham being one of them.”
             </p>
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Air Force(Flying Batch)</span>
+              <span class="name">Shaksham Kumar</span>
+              <span class="job">Recommended for NDA - 148</span>
             </div></SwiperSlide>
         <SwiperSlide className='swiper-slide slide'> <div className='black-box'>
-        <img src={im1}  alt="" />
+        <img src="https://www.ssbbullseye.com/utilities/frontend/images/alo.png"  alt="" />
         <div className='black-box-circle' onClick={()=>{window.location.href="https://www.ssbbullseye.com/videos/shlok.mp4"}}>
         <FaPlay />
             <div className="yellow-circle3"></div>
@@ -60,11 +60,11 @@ export default function Testimonials() {
             </p>
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Air Force(Flying Batch)</span>
+              <span class="name">Shlok Anaokar</span>
+              <span class="job">AirForce(Flying Branch)</span>
             </div></SwiperSlide>
         <SwiperSlide className='swiper-slide slide'> <div className='black-box'>
-        <img src={im1}  alt="" />
+        <img src="https://www.ssbbullseye.com/utilities/frontend/images/ARYA.png"  alt="" />
         <div className='black-box-circle' onClick={()=>{window.location.href="https://www.ssbbullseye.com/videos/aryaman.mp4"}}>
         <FaPlay />
             <div className="yellow-circle3"></div>
@@ -72,12 +72,12 @@ export default function Testimonials() {
         </div>
         </div>
             <p>
-            “Embarking on a linguistic journey, we delve into language education, guiding students through exploration and proficiency.”
+            “Aryaman Bhatt gets recommended by 2 AFSB Mysore, in his FIRST ATTEMPT. 160 candidates reported, 49 screened in and finally 6 candidates recommended, Aryaman being the ONLY FRESHER to be recommended.”
             </p>
             <i class="bx bxs-quote-alt-left quote-icon"></i>
             <div class="details">
-              <span class="name">Marnie Lotter</span>
-              <span class="job">Air Force(Flying Batch)</span>
+              <span class="name">Aryaman Bhatt</span>
+              <span class="job">Recommended for AirForce(Non Flying Branch)</span>
             </div></SwiperSlide>
        
       </Swiper>
