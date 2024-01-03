@@ -7,12 +7,13 @@ justify-content: space-between;
 align-items: center;
 position: fixed;
 width: 100%;
-background-color: white;
+background: #3D9970;
+color: white;
 z-index: 999;
 }
 
 .menu{
-    color: #001F3F;
+    color: white;
     display: flex;
     justify-content:center;
     
@@ -29,15 +30,18 @@ letter-spacing: 0em;
     width:149px;
 height:50px;
 margin-right: 25px;
+background-color: white;
+color: #001F3F;
+border: .1rem solid #001F3F;
+box-shadow: 0 3px 0 0 #001F3F;
 padding: 10px, 27px, 10px, 27px;
 border-radius: 5px;
-border: 1px solid #001F3F;
 display: flex;
 justify-content: center;
 align-items: center;
 font-family: Hind Vadodara;
 font-size: 20px;
-font-weight: 500;
+font-weight: 700;
 line-height: 30px;
 letter-spacing: 0em;
 text-align: left;

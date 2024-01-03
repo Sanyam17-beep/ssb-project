@@ -58,7 +58,7 @@ function Contact() {
         </div>
         <div className="map">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d83998.77824483394!2d2.264634092871859!3d48.85893843515108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e1f06e2b70f%3A0x40b82c3688c9460!2sParis%2C%20France!5e0!3m2!1sen!2sin!4v1704005365663!5m2!1sen!2sin"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.267657021509!2d77.75945747454728!3d13.018619913846758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae0f0cd3377371%3A0x7204c157f6ec1532!2sSSBBullsEye!5e0!3m2!1sen!2sin!4v1704266595700!5m2!1sen!2sin"
             className="map-content"
             style={{ border: "0" }}
             allowfullscreen=""
