@@ -21,7 +21,7 @@ export default function Testimonials() {
         loop={true}
         centeredSlides={true}
         autoplay={{
-          delay: 2500,
+          delay: 25000,
           disableOnInteraction: false,
         }}
         pagination={{

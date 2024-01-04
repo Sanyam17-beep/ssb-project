@@ -11,7 +11,7 @@ align-items: center;
     display: flex;
 justify-content: center;
 align-items: center;
-gap: 20px;
+gap: 40px;
 flex-wrap: wrap;
 }
 .Feature:nth-child(odd){
@@ -44,8 +44,8 @@ flex-wrap: wrap;
     transform: rotate(0);
 }
 .Feature{
-    width: 308px;
-height: 249px;
+    width: 290px;
+height: 240px;
 display: flex;
 justify-content: center;
 align-items: center;

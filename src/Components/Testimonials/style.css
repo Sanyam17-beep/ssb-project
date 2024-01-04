@@ -18,7 +18,7 @@
 .testimonial {
     position: relative;
     max-width: 900px;
-    width: 100%;
+    width: 95%;
     padding: 30px 0;
     overflow: hidden;
   }
@@ -39,15 +39,14 @@
   }
   .slide p {
     text-align: center;
-    padding: 0 160px;
+    padding: 0 65px;
     font-size: 14px;
     font-weight: 400;
     font-family: Hind Vadodara;
-font-size: 20px;
 font-weight: 500;
-line-height: 30px;
+line-height: 25px;
 letter-spacing: 0em;
-text-align: center;
+
 
     color: white;
   }
@@ -111,11 +110,11 @@ color: white;
 .heading{
     color: white;
 font-family: Yantramanav;
-font-size: 96px;
+font-size: 55px;
 font-weight: 700;
-line-height: 125px;
+line-height: 70px;
 letter-spacing: 0em;
-text-align: left;
+text-align: center;
 
 }
   .swiper-button-next::after,
@@ -172,8 +171,8 @@ text-align: left;
     transform: translate(-50%,-50%);
   }
   .black-box{
-    width: 400px;
-height: 250px;
+    width: 275px;
+height: 200px;
 border-radius: 33px;
 position: relative;
 
