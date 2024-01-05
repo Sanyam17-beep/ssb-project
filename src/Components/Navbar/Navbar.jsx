@@ -1,12 +1,13 @@
 import React,{ useState } from 'react'
 import "./style.css"
 import svglogo from "../../Primarygreen.svg";
+import { useNavigate } from 'react-router-dom'
 function Navbar() {
-  
+  const navigate=useNavigate();
   const [Active,SetActive]=useState("Home");
   return (
     <div className='Nav'>
-      <div className='logo'>
+      <div className='logo' style={{cursor:"pointer"}} onClick={()=>{navigate('/home')}}>
        <img src={svglogo} alt="" width={120}/>
       </div>
       <div className='menu'>
@@ -16,7 +17,7 @@ function Navbar() {
         <div style={Active=="Registration"?{cursor:"pointer",fontWeight:"700"}:{cursor:"pointer"}} onClick={()=>SetActive("Registration")}>Registration</div>
         <div style={Active=="Contact us"?{cursor:"pointer",fontWeight:"700"}:{cursor:"pointer"}} onClick={()=>SetActive("Contact us")}>Contact us</div>
       </div>
-      <div className='enroll' style={{cursor:"pointer"}}>Enroll Now</div>
+      <div className='enroll' style={{cursor:"pointer"}} onClick={()=>{navigate('/enroll')}}>Enroll Now</div>
     </div>
   )
 }
