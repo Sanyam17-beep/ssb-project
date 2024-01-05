@@ -111,8 +111,8 @@ function Enroll() {
 
   return (
     <>
-      <Navbar></Navbar>
-      <div className="Enroll-page">
+      
+      <div className="Enroll-page" id="enroll">
         <div className="Enroll-heading">Enroll now</div>
         <form onSubmit={(e) => {handlePayment(e);
         Submit(e);
@@ -121,7 +121,7 @@ function Enroll() {
             <legend>Entry Applied For*</legend>
             <label htmlFor="Indian-army" className="form-group">
               Indian Army
-              <select id="ssbarmy" name="ssbarmy" class="form-control" value={army} onChange={(e)=>{setArmy(e.target.value);}}>
+              <select id="ssbarmy" name="ssbarmy" class="form-control" value={army} onChange={(e)=>{setArmy(e.target.value);}} required>
                 <option value="0"> Select Type of Entry </option>
                 <option value="NDA">NDA</option>
                 <option value="10+2 TES">10+2 TES</option>
@@ -148,7 +148,7 @@ function Enroll() {
             </label>
             <label htmlFor="Indian-army" className="form-group">
               Indian Navy
-              <select id="ssbarmy" name="ssbarmy" class="form-control" value={navy} onChange={(e)=>{setNavy(e.target.value);}}>
+              <select id="ssbarmy" name="ssbarmy" class="form-control" value={navy} onChange={(e)=>{setNavy(e.target.value);}} required>
                 <option value="0"> Select Type of Entry </option>
                 <option value="NDA">NDA</option>
                 <option value="10+2 TES">10+2 TES</option>
@@ -175,7 +175,7 @@ function Enroll() {
             </label>
             <label htmlFor="Indian-army" className="form-group" >
               Indian Air Force
-              <select id="ssbarmy" name="ssbarmy" class="form-control" value={force} onChange={(e)=>{setForce(e.target.value);}}>
+              <select id="ssbarmy" name="ssbarmy" class="form-control" value={force} onChange={(e)=>{setForce(e.target.value);}} required>
                 <option value="0"> Select Type of Entry </option>
                 <option value="NDA">NDA</option>
                 <option value="10+2 TES">10+2 TES</option>
@@ -206,7 +206,7 @@ function Enroll() {
             <label>
               SSB Chances Availed <small>*</small>
             </label>
-            <select id="ssbchances" name="ssbchances" class="form-control" value={chances} onChange={(e)=>{setChances(e.target.value);}}>
+            <select id="ssbchances" name="ssbchances" class="form-control" value={chances} onChange={(e)=>{setChances(e.target.value);}} required>
               <option value=""> Select Number of Chances </option>
               <option value="0"> 0 </option>
               <option value="1"> 1 </option>
@@ -230,8 +230,8 @@ function Enroll() {
             <label>
               Presently serving in Army/Navy/Airforce<small>*</small>
             </label>
-            <select id="servicemen" name="servicemen" class="form-control" value={serving} onChange={(e)=>{setServing(e.target.value);}}>
-              <option value="0">Select anyone</option>
+            <select id="servicemen" name="servicemen" class="form-control" value={serving} onChange={(e)=>{setServing(e.target.value);}} required>
+              <option value="">Select anyone</option>
               <option value="Yes">Yes</option>
               <option value="No">No</option>
             </select>
@@ -247,8 +247,9 @@ function Enroll() {
               class="form-control"
               
               value={module} onChange={(e)=>{setModule(e.target.value);}}
+              required
             >
-              <option value="0">Select Module</option>
+              <option value="">Select Module</option>
               <option value="Composite">Composite</option>
             </select>{" "}
           </div>
@@ -261,8 +262,9 @@ function Enroll() {
               id="type"
               class="form-control"
               value={registration} onChange={(e)=>{setRegistration(e.target.value);}}
+              required
             >
-              <option value="0">Select Type</option>
+              <option value="">Select Type</option>
               <option value="Batch 1 Registration ( 2-6 Candidates )">Batch 1 Registration ( 2-6 Candidates )</option>
               <option value="Batch 2 Registration ( 7-11 Candidates )">
                 Batch 2 Registration ( 7-11 Candidates )
@@ -276,8 +278,8 @@ function Enroll() {
             <label>
               Slot Training<small>*</small>
             </label>
-            <select id="stime" name="stime" class="form-control required" value={slot} onChange={(e)=>{setSlot(e.target.value);}}>
-              <option value="0"> Select Slot Timing</option>
+            <select id="stime" name="stime" class="form-control required" value={slot} onChange={(e)=>{setSlot(e.target.value);}} required>
+              <option value=""> Select Slot Timing</option>
               <option value="07:00 AM - 09:00 AM">07:00 AM - 09:00 AM</option>
               <option value="02:00 PM - 04:00 PM">02:00 PM - 04:00 PM</option>
               <option value="07:00 PM - 09:00 PM">07:00 PM - 09:00 PM</option>
@@ -293,6 +295,7 @@ function Enroll() {
               class="form-control"
               type="text"
               placeholder="Enter First Name &amp; Last Name"
+              pattern="[A-Za-z]+( [A-Za-z]+)*"
               value={Name} onChange={(e)=>{setName(e.target.value);}}
               required
             />
@@ -307,6 +310,7 @@ function Enroll() {
               class="form-control"
               type="text"
               placeholder="username@domainname.com"
+              pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
             value={Email} onChange={(e)=>{setEmail(e.target.value);}}
               required
             />
@@ -322,6 +326,7 @@ function Enroll() {
               type="text"
               placeholder="Enter Date of birth [26-02-1987]"
               value={dob} onChange={(e)=>{setDob(e.target.value);}}
+              pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$"
               required
             />
           </div>
@@ -334,7 +339,8 @@ function Enroll() {
               id="phone"
               class="form-control"
               type="text"
-              placeholder="Enter Whatsapp No [+91 9000XXXXXX]"
+              placeholder="Enter Whatsapp No [+919000XXXXXX]"
+              pattern="\+91[0-9]{10}"
               value={number} onChange={(e)=>{setNumber(e.target.value);}}
               required
             />
@@ -357,8 +363,8 @@ function Enroll() {
             <label>
               State / Union Territory<small>*</small>
             </label>
-            <select name="state" id="state" class="form-control" value={state} onChange={(e)=>{setState(e.target.value);}}>
-              <option value="0">Select State</option>
+            <select name="state" id="state" class="form-control" value={state} onChange={(e)=>{setState(e.target.value);}} required>
+              <option value="">Select State</option>
               <option value="Andaman and Nicobar Islands">
                 Andaman and Nicobar Islands
               </option>
@@ -425,7 +431,7 @@ function Enroll() {
           </div>
         </form>
       </div>
-      <Footer></Footer>
+      
     </>
   );
 }

@@ -2,8 +2,11 @@ import React, { useEffect, useState } from "react";
 import "./style.css";
 import { FaPlay } from "react-icons/fa6";
 import im1 from "../../im1.jpg";
-import im2 from "../../im2.jpg";
-const imagesArray = [im1, im2];
+import im2 from "../../im2.jpg"
+import im3 from "../../im3.jpg";
+import im4 from "../../im4.avif"
+import Enroll from "../../Pages/Enroll";
+const imagesArray = [im1, im3,im4];
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -16,7 +19,8 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
+      
       <div className="top">
         <div className="Hero-header-container">
           <div className="Hero-header">

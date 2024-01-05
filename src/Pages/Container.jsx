@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from '../Components/Navbar/Navbar';
 import Hero from '../Components/Hero/Hero';
 import Feature from '../Components/Feature/Feature';
@@ -11,20 +11,29 @@ import Blogs from '../Components/Blogs/Blogs';
 import Contact from '../Components/Contact/Contact';
 import Footer from '../Components/Footer/Footer';
 import "../App.css"
+import { useLocation } from 'react-router-dom';
+import Enroll from './Enroll';
 function Container() {
+ const [enroll,setenroll]=useState(false);
   return (
     <div>
-            <Navbar/>
-        <Hero/>
+            <Navbar enroll={enroll} setenroll={setenroll}/>
+            {enroll&&<Enroll/>}
+            {!enroll&&<>
+              <Hero />
         <Feature/>
         <Classroom/>
         <Point/>
-        <Aboutceo/>
+        <Aboutceo />
         <Testimonials/>
         <Employee/>
         <Blogs/>
         <Contact/>
+            </>}
+       
+        {/* <Enroll/> */}
         <Footer/>
+
     </div>
   )
 }

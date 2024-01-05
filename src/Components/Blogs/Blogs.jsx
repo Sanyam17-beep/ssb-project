@@ -1,6 +1,8 @@
 import React from 'react'
 import "./style.css"
-import im1 from "../../im1.jpg";
+import im1 from "../../im3.jpg";
+import im4 from "../../im4.avif";
+import im5 from "../../im5.webp"
 function Blogs() {
   return (
     <div className='blogs-container'>
@@ -21,7 +23,7 @@ function Blogs() {
             </div>
             <div className='blog'>
             <div className='blog-image'>
-            <img src={im1}  alt="" />
+            <img src={im4}  alt="" />
             </div>
                 <div className='blog-content'>
                 <div className='keyword'>Keyword | Date</div>
@@ -31,7 +33,7 @@ function Blogs() {
             </div>
             <div className='blog'>
             <div className='blog-image'>
-            <img src={im1}  alt="" />
+            <img src={im5}  alt="" />
             </div>
                 <div className='blog-content'>
                 <div className='keyword'>Keyword | Date</div>

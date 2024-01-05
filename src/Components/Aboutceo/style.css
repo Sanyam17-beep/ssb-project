@@ -28,11 +28,22 @@ border-bottom-right-radius:8rem;
 background-color: black;
 position: relative;
 }
+.name{
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
 .Image3{
     height:556px;
     width: 480px;
     border-radius: 33px;
     background-color: black;
+    position: relative;
 }
 
 .play-video-container1{

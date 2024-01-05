@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import im1 from "../../im1.jpg";
+import im1 from "../../im6.webp";
 function Point() {
   return (
     <div className="point-container">

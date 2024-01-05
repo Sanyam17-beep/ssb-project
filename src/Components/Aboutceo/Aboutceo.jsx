@@ -1,19 +1,20 @@
 import React from 'react'
 import "./style.css"
-import im1 from "../../im1.jpg";
+import im1 from "../../im7.jpg"
+import im9 from "../../im9.png"
 import { SlMouse } from "react-icons/sl";
 import { FaPlay } from "react-icons/fa";
 function Aboutceo() {
   return (
-    <div className='Classroom-container1' style={{width:"100%",paddingTop:"34.5px",paddingBottom:"34.5px"}}>
+    <div className='Classroom-container1' style={{width:"100%",paddingTop:"34.5px",paddingBottom:"34.5px"}} id='about'>
     <div className='Image3-container1'>
     <div className='Image3'>
         <img src={im1}  alt="" />
-        
+        <div className='name'>Lt Col C Navneet Rao (Veteran)</div>
     </div>
     <div className='content3-container'>
         <div className='play-video1'>
-        <img src={im1}  alt="" />
+        <img src={im9}  alt="" />
         <div className='play-video-container1'>
             <div className='play-video-contents'>
                 <div className='play-video-content1'>Play Video</div>
@@ -28,7 +29,7 @@ function Aboutceo() {
         </div>
         </div>
         <div className='content3-container-data'>
-            <div className='content3-container-data-header'>Message form Our Founding Director</div>
+            <div className='content3-container-data-header'>Message from Our Founding Director</div>
             
             <div className='content3-container-para'>
             <p>Embarking on a linguistic journey, we delve into language education, guiding students through exploration and proficiency.

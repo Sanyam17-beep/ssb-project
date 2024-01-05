@@ -5,7 +5,10 @@ import { MdEmail } from "react-icons/md";
 import { IoLogoWhatsapp } from "react-icons/io";
 function Contact() {
   return (
-    <div className="Contact-container">
+    <>
+ 
+    <div className="Contact-container"  id="contact">
+      
       <div className="mobile-contact">
    
         <div className="Contact-form">
@@ -14,7 +17,7 @@ function Contact() {
               <div className="form-header-title">
                 Get in <span>Touch</span>
               </div>
-              <div className="hello">
+              <div className="hello" >
                 Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu
                 leo molestie vel, ornare non id blandit netus.
               </div>
@@ -44,10 +47,10 @@ function Contact() {
           ></iframe>
       </div>
       </div>
-      <div className="Contact">
+      <div className="Contact" >
         <div className="Contact-form">
           <div className="form-container">
-            <div className="form-header-container">
+            <div className="form-header-container"  >
               <div className="form-header-title">
                 Get in <span>Touch</span>
               </div>
@@ -84,6 +87,7 @@ function Contact() {
       </div>
       <div className="color-box"></div>
     </div>
+    </>
   );
 }
 

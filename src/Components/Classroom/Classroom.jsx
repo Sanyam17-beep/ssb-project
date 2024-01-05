@@ -1,6 +1,6 @@
 import React from 'react'
 import "./style.css"
-import im1 from "../../im1.jpg";
+import im1 from "../../im5.webp";
 import { SlMouse } from "react-icons/sl";
 import { FaPlay } from "react-icons/fa";
 function Classroom() {

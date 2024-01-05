@@ -1,11 +1,15 @@
 .Enroll-page{
-
   padding-top: 91.6px;
-  padding-left:20px ;
+  padding-left: 20px;
+  /* width: 100%; */
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-right: 20px;
 }
 .Enroll-heading{
-  font-size:75px;
+  font-size:50px;
  
   font-family:DM Sans;
   background-color: white;
@@ -74,6 +78,9 @@ legend{
   }
 }
 @media only screen and (max-width: 800px) {
+  .Enroll-page{
+    width: 89.5% !important;
+  }
   .mobile-contact{
       display: flex !important;
       justify-content: center;
@@ -86,7 +93,15 @@ legend{
   .color-box{
       display: none !important;
   }
+  .hamburger1{
+    display: -ms-grid !important;
+    display: grid !important;
+    margin-right: 30px !important;
+  }
   .menu{
+    display: none !important;
+  }
+  .enroll{
     display: none !important;
   }
   .Image-container2{
