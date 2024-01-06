@@ -31,7 +31,7 @@ export default function Testimonials() {
         modules={[Autoplay, Navigation]}
         className="mySwiper testimonial"
       >
-        <SwiperSlide className='slide swiper-slide'> <div className='black-box'>
+        <SwiperSlide className='slide swiper-slide'> <div className='black-box' style={{cursor:"pointer"}}>
         <img src="https://www.ssbbullseye.com/utilities/frontend/images/shaksham.png"  alt="" />
         <div className='black-box-circle' onClick={()=>{window.location.href="https://www.ssbbullseye.com/videos/shaksham.mp4"}}>
         <FaPlay />
