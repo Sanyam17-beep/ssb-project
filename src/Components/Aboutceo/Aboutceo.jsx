@@ -22,7 +22,7 @@ function Aboutceo() {
             </div>
          
         </div>
-        <div className='play-circle1' onClick={()=>{window.location.href="https://www.ssbbullseye.com/uploads/ssb.mp4"}}>
+        <div className='play-circle1' onClick={()=>{window.location.href="https://youtu.be/jj4Fu8qmO3c?si=UoYFtW3E1m_fabno"}}>
         <FaPlay />
         <div className="yellow-circle1"></div>
         <div className="yellow-circle2"></div>

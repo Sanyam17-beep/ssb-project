@@ -115,6 +115,7 @@ function Enroll() {
     },
     [Razorpay]
   );
+//   useEffect(()=>{console.log(dob)},[dob]);
 useEffect(()=>{
 if(loaded){
     Submit();
@@ -334,10 +335,10 @@ if(loaded){
               name="dob"
               id="dob"
               class="form-control"
-              type="text"
+              type="date"
               placeholder="Enter Date of birth [26-02-1987]"
               value={dob} onChange={(e)=>{setDob(e.target.value);}}
-              pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$"
+            //   pattern="^(0[1-9]|[12][0-9]|3[01])-(0[1-9]|1[0-2])-\d{4}$"
               required
             />
           </div>
@@ -350,8 +351,8 @@ if(loaded){
               id="phone"
               class="form-control"
               type="text"
-              placeholder="Enter Whatsapp No [+919000XXXXXX]"
-              pattern="\+91[0-9]{10}"
+              placeholder="Enter Whatsapp No [9000XXXXXX]"
+              pattern="[0-9]{10}"
               value={number} onChange={(e)=>{setNumber(e.target.value);}}
               required
             />
