@@ -81,6 +81,17 @@ legend{
   .Enroll-page{
     width: 89.5% !important;
   }
+  /* .dropdown{
+    position: static !important;
+    background-color: white !important;
+  }
+  a:hover{
+    color: black !important;
+    
+  }
+  a{
+    color: #3d9970 !important;
+  } */
   .mobile-contact{
       display: flex !important;
       justify-content: center;

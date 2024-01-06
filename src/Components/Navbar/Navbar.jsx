@@ -9,7 +9,7 @@ function Navbar({setenroll,enroll}) {
 
   const [Active, SetActive] = useState("Home");
   const [check,setcheck]=useState(false);
- 
+ const [drop,setdrop]=useState(false);
   const smoothScrollTo = (id, callback) => {
     // Check if the current route is /enroll
    
@@ -162,13 +162,19 @@ function Navbar({setenroll,enroll}) {
         </div>
         <div
           style={
-            Active == "Eligibilty"
-              ? { cursor: "pointer", fontWeight: "700" }
-              : { cursor: "pointer" }
+            Active == "Eligibilty"&&drop
+              ? { cursor: "pointer", fontWeight: "700",position:"relative" }
+              : { cursor: "pointer" ,position:"relative"}
           }
-          onClick={() => SetActive("Eligibilty")}
+          onClick={() => {SetActive("Eligibilty");setdrop(!drop)}}
+          className="eligibilty"
         >
           Eligibilty
+          <div className="dropdown" style={  drop?{height:"160px"}:{}}>
+            <a href="https://164.100.158.23/how-to-join.htm" className="dropdown-item">Indian Army</a>
+            <a href="https://www.joinindiannavy.gov.in/en/entry/entry/eligibilityform" className="dropdown-item">Indian Navy</a>
+            <a href="https://afcat.cdac.in/AFCAT/CareerAsPerQualification.html" className="dropdown-item">Indian Air force</a>
+          </div>
         </div>
         <div
           style={
@@ -204,7 +210,9 @@ function Navbar({setenroll,enroll}) {
     <div className="link1"
           style={
             Active == "Home"
-              ? { cursor: "pointer", fontWeight: "700" }
+              ? { cursor: "pointer", fontWeight: "700", backgroundColor: "#fff",
+              color: "#3D9970",
+              transition: "all 0.3s ease" }
               : { cursor: "pointer" }
           }
           onClick={() => {
@@ -218,7 +226,9 @@ function Navbar({setenroll,enroll}) {
         <div className="link1"
           style={
             Active == "About us"
-              ? { cursor: "pointer", fontWeight: "700" }
+              ? { cursor: "pointer", fontWeight: "700", backgroundColor: "#fff",
+              color: "#3D9970",
+              transition: "all 0.3s ease" }
               : { cursor: "pointer" }
           }
           onClick={() => { setenroll(false);handleScrollTo('about');SetActive("About us")}}
@@ -232,7 +242,9 @@ function Navbar({setenroll,enroll}) {
         <div className="link1"
           style={
            Active==="Registration"&& enroll===true
-              ? { cursor: "pointer", fontWeight: "700" }
+              ? { cursor: "pointer", fontWeight: "700", backgroundColor: "#fff",
+              color: "#3D9970",
+              transition: "all 0.3s ease" }
               : { cursor: "pointer" }
           }
           onClick={() => {
@@ -244,20 +256,29 @@ function Navbar({setenroll,enroll}) {
         >
           Registration
         </div>
-        <div className="link1"
+        <div  className="link1"
           style={
             Active == "Eligibilty"
-              ? { cursor: "pointer", fontWeight: "700" }
-              : { cursor: "pointer" }
+              ? { cursor: "pointer", fontWeight: "700",position:"relative", backgroundColor: "#fff",
+              color: "#3D9970",
+              transition: "all 0.3s ease" }
+              : { cursor: "pointer" ,position:"relative"}
           }
-          onClick={() => SetActive("Eligibilty")}
+          onClick={() => {SetActive("Eligibilty")}}
+        
         >
           Eligibilty
+          
         </div>
+        <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://164.100.158.23/how-to-join.htm" >Indian Army</a>
+            <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://www.joinindiannavy.gov.in/en/entry/entry/eligibilityform" >Indian Navy</a>
+            <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://afcat.cdac.in/AFCAT/CareerAsPerQualification.html">Indian Air force</a>
         <div className="link1"
           style={
             Active == "Contact us"
-              ? { cursor: "pointer", fontWeight: "700" }
+              ?  { cursor: "pointer", fontWeight: "700", backgroundColor: "#fff",
+              color: "#3D9970",
+              transition: "all 0.3s ease" }
               : { cursor: "pointer" }
           }
           onClick={() => { setenroll(false);handleScrollTo('contact');SetActive("Contact us")}}
