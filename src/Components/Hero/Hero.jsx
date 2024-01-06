@@ -4,9 +4,9 @@ import { FaPlay } from "react-icons/fa6";
 import im1 from "../../im1.jpg";
 import im2 from "../../im2.jpg"
 import im3 from "../../im3.jpg";
-import im4 from "../../im4.avif"
+
 import Enroll from "../../Pages/Enroll";
-const imagesArray = [im1, im3,im4];
+const imagesArray = [im1, im3];
 function Hero() {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
