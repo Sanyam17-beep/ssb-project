@@ -58,7 +58,7 @@ function Employee() {
     
       return (
         <div className="gtco-testimonials">
-          <h1>Testimonials</h1>
+          <h1>Team</h1>
           <OwlCarousel className="owl-carousel1 owl-theme" {...owlCarouselOptions}>
             <div>
               <div className="card text-center">

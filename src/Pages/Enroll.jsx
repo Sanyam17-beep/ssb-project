@@ -22,8 +22,8 @@ function Enroll() {
   const [army, setArmy] = useState("");
   const [navy, setNavy] = useState("");
   const [force, setForce] = useState("");
-  function Submit(e) {
-    e.preventDefault();
+  function Submit() {
+ 
     
     const formDatab = new FormData();
     formDatab.append('Name', Name);
@@ -88,7 +88,13 @@ function Enroll() {
           "http://localhost:3000/static/media/Primarygreen.0c9716bab372845eab9732aa01412125.svg",
 
         handler: (res) => {
-          console.log(res);
+            if (res.razorpay_payment_id) {
+                // Payment successful, submit the form
+                setLoaded(true);
+              } else {
+                // Payment failed
+                console.error("Payment failed");
+              }
         },
         prefill: {
           name: Name,
@@ -104,18 +110,23 @@ function Enroll() {
       };
 
       const rzpay = new Razorpay(options);
+   
       rzpay.open();
     },
     [Razorpay]
   );
-
+useEffect(()=>{
+if(loaded){
+    Submit();
+}
+},[loaded])
   return (
     <>
       
       <div className="Enroll-page" id="enroll">
         <div className="Enroll-heading">Enroll now</div>
         <form onSubmit={(e) => {handlePayment(e);
-        Submit(e);
+       
         }} className="form-container">
           <fieldset className="fieldset">
             <legend>Entry Applied For*</legend>
