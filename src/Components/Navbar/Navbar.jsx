@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState,useEffect,useRef } from "react";
 import "./style.css";
 import svglogo from "../../Primarygreen.svg";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -93,7 +93,27 @@ function Navbar({setenroll,enroll}) {
  },100)
   
   };
+  const [isOpen, setIsOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
+  const toggleDropdown = () => {
+    SetActive("Eligibilty");
+    setIsOpen(!isOpen);
+  };
+
+  const closeDropdown = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setIsOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', closeDropdown);
+
+    return () => {
+      document.removeEventListener('mousedown', closeDropdown);
+    };
+  }, []);
 
   // useEffect(() => {
   //   // Optionally, you can handle initial scroll based on URL hash
@@ -162,19 +182,21 @@ function Navbar({setenroll,enroll}) {
         </div>
         <div
           style={
-            Active == "Eligibilty"&&drop
+            Active == "Eligibilty"
               ? { cursor: "pointer", fontWeight: "700",position:"relative" }
               : { cursor: "pointer" ,position:"relative"}
           }
-          onClick={() => {SetActive("Eligibilty");setdrop(!drop)}}
+          onClick={toggleDropdown}
           className="eligibilty"
         >
           Eligibilty
-          <div className="dropdown" style={  drop?{height:"160px"}:{}}>
+          {isOpen && (
+          <div className="dropdown" ref={dropdownRef} style={{height:"160px"}}>
             <a href="https://164.100.158.23/how-to-join.htm" className="dropdown-item">Indian Army</a>
             <a href="https://www.joinindiannavy.gov.in/en/entry/entry/eligibilityform" className="dropdown-item">Indian Navy</a>
             <a href="https://afcat.cdac.in/AFCAT/CareerAsPerQualification.html" className="dropdown-item">Indian Air force</a>
           </div>
+          )}
         </div>
         <div
           style={
@@ -190,7 +212,7 @@ function Navbar({setenroll,enroll}) {
         </div>
       </div>
       <div
-        className="enroll"
+        className="enroll hide"
         style={{ cursor: "pointer" }}
         onClick={() => {
           SetActive("Registration");
@@ -209,7 +231,7 @@ function Navbar({setenroll,enroll}) {
     <nav class="menu1">
     <div className="link1"
           style={
-            Active == "Home"
+            Active == "Home1"
               ? { cursor: "pointer", fontWeight: "700", backgroundColor: "#fff",
               color: "#3D9970",
               transition: "all 0.3s ease" }
@@ -218,7 +240,7 @@ function Navbar({setenroll,enroll}) {
           onClick={() => {
             setenroll(false);
             handleScrollTo('home');
-            SetActive("Home");
+            SetActive("Home1");
           }}
         >
             Home
@@ -270,9 +292,11 @@ function Navbar({setenroll,enroll}) {
           Eligibilty
           
         </div>
+        {/* <div style={{display:"flex",flexDirection:"column",justifyContent:"center",alignItems:"center",gap:"20px"}}> */}
         <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://164.100.158.23/how-to-join.htm" >Indian Army</a>
             <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://www.joinindiannavy.gov.in/en/entry/entry/eligibilityform" >Indian Navy</a>
             <a className="mobile-drop" style={ Active == "Eligibilty"?{}:{display:"none"}} href="https://afcat.cdac.in/AFCAT/CareerAsPerQualification.html">Indian Air force</a>
+            {/* </div> */}
         <div className="link1"
           style={
             Active == "Contact us"

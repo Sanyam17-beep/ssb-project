@@ -22,7 +22,7 @@ function Container() {
             {!enroll&&<>
               <Hero />
         <Feature/>
-        <Classroom/>
+        <Classroom enroll={enroll} setenroll={setenroll}/>
         <Point/>
         <Aboutceo />
         <Testimonials/>
